@@ -1,0 +1,95 @@
+{
+    "name": "play-it-mpv",
+    "license": "GPLv3",
+    "author": "@r3dbU7z",
+    "version": "0.1.2",
+    "description": "Watch videos from various sites using native player (like mpv) and youtube-dl.",
+    "homepage": "https://gitlab.com/r3dbU7z/play-it-mpv",
+    "icon": "data/img/icon_button.png",
+    "main": "lib/main.js",
+    "permissions": {
+        "private-browsing": true
+    },
+    "preferences": [
+        {
+            "type": "file",
+            "name": "player",
+            "title": "Native player location",
+            "description": "Specify native player executable full path; Exampe: /usr/bin/mpv"
+        },
+        {
+            "type": "file",
+            "name": "youtubedl",
+            "title": "youtube-dl location",
+            "description": "Specify youtube-dl executable full path; Exampe: /usr/bin/youtube-dl"
+        },
+        {
+            "name": "params",
+            "title": "Additional player parameters",
+            "description": "Specify additional parameters to pass the native player when started. Leave empty if none are required. Use %%url%% placeholder to be able to pass video link as a parameter (useful when using custom script to execute additional logic).",
+            "type": "string",
+            "value": "--force-window"
+        },
+        {
+            "name": "ytStartPlAtIndex",
+            "title": "Start playlist playback from the selected video",
+            "description": "While in Youtube playlist, context menu command will play the playlist starting from the selected video.",
+            "type": "bool",
+            "value": false
+        },
+        {
+            "name": "showContextMenu",
+            "title": "Show context menu entry",
+            "type": "bool",
+            "value": true
+        },
+        {
+            "name": "altClick",
+            "title": "Use alt-modifier mouse click to open the url link",
+            "description": "Alt + Left-click - play a link with the current quality settings; Alt + Right-click - Open a Get Formats Panel for the selected link",
+            "type": "bool",
+            "value": false
+        },
+        {
+            "name": "preferredQuality",
+            "type": "menulist",
+            "title": "Preferred quality",
+            "description": "Defines the preferred frame quality level. Select the frame size in pixels",
+            "value": 720,
+            "options": [
+                {
+                    "value": "160",
+                    "label": "160p"
+                },
+                {
+                    "value": "240",
+                    "label": "240p"
+                },
+                {
+                    "value": "360",
+                    "label": "360p"
+                },
+                {
+                    "value": "480",
+                    "label": "480p"
+                },
+                {
+                    "value": "720",
+                    "label": "720p"
+                },
+                {
+                    "value": "1080",
+                    "label": "1080p"
+                },
+                {
+                    "value": "1440",
+                    "label": "1440p"
+                },
+                {
+                    "value": "2160",
+                    "label": "2160p"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,7 @@
+*.xpi
+*.txt
+*.rdf
+*.yml
+*.exe
+*.jpmignore
+bootstrap.js
