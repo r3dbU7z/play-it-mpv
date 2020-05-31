@@ -31,7 +31,5 @@ jobs:
     - name: 'Play-it-MPV'
       uses: ./
       with:
-        name: 'Artifact-A'
-        path: path/to/dir-1/file1.txt
         path: ./play-it-mpv.xpi
       
