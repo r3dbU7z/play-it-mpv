@@ -13,7 +13,7 @@ This is firefox browser extension that gives the user the ability to play video 
 
 ### Download
 1. Download [play-it-mpv.xpi](https://github.com/r3dbU7z/play-it-mpv/releases/download/0.1.2/play-it-mpv.xpi) file, or download from Actions page [play-it-mpv.zip](https://github.com/r3dbU7z/play-it-mpv/suites/738344109/artifacts/7466974)
-2. Open the `play-it-mpv.xpi` file with Firefox. It is recommended to use Firefox Developer Edition(no digital signature error, **this add-on is NOT signed**)
+2. Open the `play-it-mpv.xpi` file with Firefox. It is recommended to use [Waterfox Classic](https://www.waterfox.net/download/)(no digital signature error, **this add-on is NOT signed**) Tested on versions: Waterfox 2020.05 (64-bit) and below.
 3. Or use the load through `about: debugging` tab.
 
 ### Build it manually
