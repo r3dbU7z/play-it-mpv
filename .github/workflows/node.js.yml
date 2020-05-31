@@ -32,5 +32,5 @@ jobs:
       uses: ./
       with:
         name: 'play-it-mpv'
-        path: ./play-it-mpv.xpi
+        path: /home/runner/work/play-it-mpv/play-it-mpv/play-it-mpv.xpi
       
