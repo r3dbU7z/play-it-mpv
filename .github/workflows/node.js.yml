@@ -26,10 +26,11 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: npm install jpm --global
     - run: jpm -v --stop-on-error xpi
-      
-    #Upload a single file artifact
-    - name: 'Play-it-MPV'
+ 
+ # Upload a single file artifact
+    - name: 'Upload artefact#1'
       uses: ./
       with:
+        name: 'play-it-mpv'
         path: ./play-it-mpv.xpi
       
