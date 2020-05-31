@@ -29,11 +29,10 @@ jobs:
     
     - name: 'Build'
     - run: jpm -v --stop-on-error xpi
-      
-    # Upload a single file artifact
-    - name: 'Upload artefact#1'
-      uses: ./
+    
+    - name: Archive code coverage results
+      uses: actions/upload-artifact@v1
       with:
-        name: 'play-it-mpv'
+        name: play-it-mpv
         path: /home/runner/work/play-it-mpv/play-it-mpv/play-it-mpv.xpi
       
