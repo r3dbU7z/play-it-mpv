@@ -1,3 +1,5 @@
+![Node.js CI](https://github.com/r3dbU7z/play-it-mpv/workflows/Node.js%20CI/badge.svg)
+
 # Natively play video streams in Firefox
 ```diff
 -=This addon is written by me for learning javascript. Try don't laugh at the code, PLS=-
