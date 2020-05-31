@@ -26,7 +26,12 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: npm install jpm --global
     - run: jpm -v --stop-on-error xpi
-    - uses: actions/download-artifact@v2
+      
+    #Upload a single file artifact
+    - name: 'Play-it-MPV'
+      uses: ./
       with:
-        name: play-it-mpv.xpi
+        name: 'Artifact-A'
+        path: path/to/dir-1/file1.txt
+        path: ./play-it-mpv.xpi
       
