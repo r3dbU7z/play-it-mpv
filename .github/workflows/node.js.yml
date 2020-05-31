@@ -16,7 +16,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [10.x]
+        node-version: [8.x]
 
     steps:
     - uses: actions/checkout@v2
@@ -24,10 +24,13 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
+    - name: 'Install jpm'
     - run: npm install jpm --global
+    
+    - name: 'Build'
     - run: jpm -v --stop-on-error xpi
- 
- # Upload a single file artifact
+      
+    # Upload a single file artifact
     - name: 'Upload artefact#1'
       uses: ./
       with:
