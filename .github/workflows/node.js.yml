@@ -24,12 +24,9 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - name: 'Install jpm'
     - run: npm install jpm --global
-    
-    - name: 'Build'
+
     - run: jpm -v --stop-on-error xpi
-    
     - name: Archive code coverage results
       uses: actions/upload-artifact@v1
       with:
